@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+    <ExpandableListView
+        android:id="@+id/ex_list"
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ExpandableListView>
+    <LinearLayout
+        android:background="#C79595"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <CheckBox
+            android:textSize="20dp"
+            android:text="全选"
+            android:id="@+id/che_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text_hj"
+            android:textSize="20dp"
+            android:text="合计:$0.00"
+            android:paddingLeft="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/but_juis"
+            android:textSize="20dp"
+            android:text="去结算(0)"
+            android:layout_width="160dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>
